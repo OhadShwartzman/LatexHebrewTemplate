@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+
+\usepackage[a4paper, margin=0.25in]{geometry}
+\usepackage{microtype}
+\usepackage[nil,bidi=basic]{babel}
+\babelprovide[import=en-GB,main]{british}
+\babelprovide[import=he]{hebrew}
+
+\babelfont{rm}[
+      Ligatures=TeX,
+        SmallCapsFont={Latin Modern Roman Caps}
+] {Latin Modern Roman}
+
+\babelfont[hebrew]{rm}[
+    Ligatures = TeX,
+    ItalicFont = TaameyDavidCLM-MediumOblique,
+    BoldFont = TaameyDavidCLM-Bold,
+    BoldItalicFont = TaameyDavidCLM-BoldOblique
+]{TaameyDavidCLM-Medium}
+
+\title{ממ"ן 11}
+\author{אוהד שוורצמן}
+
+\begin{document} 
+\begin{otherlanguage}{hebrew}
+\maketitle{}
+
+יהי \(x, y \in \{1, 2\}\)
+
+\end{otherlanguage}
+
+\end{document}
